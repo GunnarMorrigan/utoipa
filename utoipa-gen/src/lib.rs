@@ -1186,6 +1186,7 @@ pub fn derive_to_schema(input: TokenStream) -> TokenStream {
 /// # use utoipa::IntoParams;
 /// # use axum::{extract::Query, Json};
 /// #[derive(Deserialize, IntoParams)]
+/// #[into_params(parameter_in = Query)]
 /// struct TodoSearchQuery {
 ///     /// Search by value. Search is incase sensitive.
 ///     value: String,

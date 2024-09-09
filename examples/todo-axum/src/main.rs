@@ -128,6 +128,7 @@ mod todo {
 
     /// Todo search query
     #[derive(Deserialize, IntoParams)]
+    #[into_params(parameter_in = Query)]
     struct TodoSearchQuery {
         /// Search by value. Search is incase sensitive.
         value: String,
